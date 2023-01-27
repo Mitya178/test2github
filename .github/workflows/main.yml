@@ -7,10 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: sudo
+      run : sudo -i
     - name: Install sphinx
       run : sudo apt install sphinx
     - name: select folder
-      run : cd /opt && ls -la 
+      run : sudo cd /opt && ls -la 
     - name: cloning repository
       run : git clone https://github.com/Mitya178/test2github.git
     - name: check my position
