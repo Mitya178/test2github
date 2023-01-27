@@ -20,6 +20,6 @@ jobs:
     - name: inside myfutureREP
       run : cd test2github && ls -la && pwd &&mkdir dima && ls -la && pwd
     - name: make html
-      run : sphinx-build -b html /home/runner/work/test2github/test2github/test2github /home/runner/work/test2github/test2github/test2github/dima && ls -la
+      run : sphinx-build -b html /home/runner/work/test2github/test2github/test2github/source /home/runner/work/test2github/test2github/test2github/dima && ls -la
     - name: coping
       run : cd _build && ls -la && cd html && ls -la
