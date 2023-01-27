@@ -1,0 +1,21 @@
+name: AboutMe
+
+on: [push]
+
+jobs:
+  build4test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install sphinx
+      run : sudo apt install sphinx
+    - name: select folder
+      run : cd /opt && ls -la 
+    - name: cloning repository
+      run : git clone https://github.com/Mitya178/test2github.git
+    - name: check my position
+      run : pwd && ls -la
+    - name: change permission
+      run : sudo chmod 777 test2github
+    - name: inside myfutureREP
+      run : cd test2github && ls -la
