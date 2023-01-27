@@ -18,8 +18,8 @@ jobs:
     - name: change permission
       run : sudo chmod 777 test2github
     - name: inside myfutureREP
-      run : cd test2github && ls -la && cd source
+      run : cd test2github && ls -la
     - name: make html
-      run : make html
+      run : sphinx-build -b html sourcedir builddir
     - name: coping
       run : cd _build && ls -la && cd html && ls -la
