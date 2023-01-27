@@ -7,12 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: sudo
-      run : sudo -i
     - name: Install sphinx
       run : sudo apt install sphinx
     - name: select folder
-      run : pwd && cd /opt && ls -la 
+      run : pwd && ls -la 
     - name: cloning repository
       run : git clone https://github.com/Mitya178/test2github.git
     - name: check my position
@@ -21,3 +19,5 @@ jobs:
       run : sudo chmod 777 test2github
     - name: inside myfutureREP
       run : cd test2github && ls -la
+    - name: make html
+      run : make html
