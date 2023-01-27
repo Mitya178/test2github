@@ -23,3 +23,5 @@ jobs:
       run : sphinx-build -b html /home/runner/work/test2github/test2github/test2github/source /home/runner/work/test2github/test2github/test2github/ && ls -la
     - name: coping
       run : cd test2github && ls -la && pwd
+     - name: git push
+      run : git status && git add * && git status && git commit -m "Version 21" && git push
